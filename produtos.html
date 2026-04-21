@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos - Atlas ERP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>Atlas ERP</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a class="active" href="produtos.html">Produtos</a>
+    <a href="clientes.html">Clientes</a>
+    <a href="relatorios.html">Relatórios</a>
+  </aside>
+
+  <main class="main">
+    <h1>Produtos</h1>
+
+    <div class="top-bar">
+      <button class="btn btn-primary">+ Novo Produto</button>
+      <input type="text" placeholder="Buscar produto...">
+      <select><option>Todas categorias</option></select>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Fornecedor</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BMW 325i E36</td>
+            <td>Carros</td>
+            <td>-</td>
+            <td>R$ 89.000</td>
+            <td>7</td>
+            <td><span class="status normal">Normal</span></td>
+            <td>
+              <button class="btn btn-success btn-sm">Editar</button>
+              <button class="btn btn-danger btn-sm">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
