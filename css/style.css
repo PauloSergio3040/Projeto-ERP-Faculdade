@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+.container {
+  display: flex;
+}
+
+/* Barra */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1f3a5f;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #2e5a8a;
+}
+
+/* Main page */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Cards coloridos */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.card p {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.blue { background: #2f6fd0; }
+.green { background: #2fa86e; }
+.orange { background: #f28c38; }
+
+/* Barra superior */
+.top-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-bar input,
+.top-bar select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Butao */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2f6fd0;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1e4fa3;
+}
+
+.btn-edit {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Tabelas */
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 10px;
+  color: #666;
+  border-bottom: 2px solid #ddd;
+}
+
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Status */
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status.normal {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status.baixo {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Grid */
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+.grid .table-container {
+  flex: 1;
+}
+
+/* ===== Padronizacao botoes ===== */
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.2s;
+}
+
+/* Principal (Az) */
+.btn-primary {
+  background: #2f6fd0;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1e4fa3;
+}
+
+/* Confirma (Vd) */
+.btn-success {
+  background: #2fa86e;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #218a59;
+}
+
+/* Perigo (Vm) */
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+/* Secundario (Cz) */
+.btn-secondary {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+
+/* Tamanhos */
+.btn-sm {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.btn-lg {
+  padding: 12px 18px;
+  font-size: 16px;
+}
